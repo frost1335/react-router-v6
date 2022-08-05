@@ -1,12 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useParams, useOutletContext } from "react-router-dom";
 
 const Book = () => {
+  const { id } = useParams();
+  const obj = useOutletContext();
+
   return (
     <>
-      <div>Book</div>
-      <Link to="/book/1">Book 1</Link>
-      <Link to="/book/2">Book 2</Link>
+      <div>
+        Book {id} {obj.hello}
+      </div>
     </>
   );
 };
