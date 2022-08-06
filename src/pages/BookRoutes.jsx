@@ -7,7 +7,7 @@ import NewBook from "./NewBook";
 export function BookRoutes() {
   return (
     <>
-      <BookLayout />
+      {/* <BookLayout /> */}
       <Routes>
         <Route element={<BookLayout />}>
           <Route index element={<BookList />} />
